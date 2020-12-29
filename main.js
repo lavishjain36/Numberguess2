@@ -1,28 +1,21 @@
-var y=Math.floor(Math.random()*100+1);
+//Random Number with maths function
+var y=Math.floor(Math.random()*100+1);//95
 
-//count the number of guesses
 var guess=1;
-
 document.getElementById("submitguess").onclick=function(){
-
-    //here user will enter a number 
-    var x=document.getElementById("guessField").value;
-
-
-    if(x==y)
-    {
-        alert("Congratulations!!You have Guessed Right in "+guess + "Guess");
-    }
-    else if(x>y)
-    {
-        guess++;
-        alert("OPs sorry!! Try a smaller number");
-
-    }
-    else
-    {
-        guess++;
-        alert("OPs sorry!! Try a Greater number");
-    }
-
+  
+ var x= document.getElementById("GuessField").value;//86
+  
+  if(x==y){
+    alert("Congratutaions😀😍!! You have got the number " +guess+ " Times." )
+  }
+  else if(x>y){
+    guess++;
+    alert("Sorry!!🙄.Try a Smaller Number")
+  }
+  
+  else {
+    guess++;
+    alert("Sorry!!🙄.Try a Larger Number")
+  }
 }
